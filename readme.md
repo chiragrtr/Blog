@@ -15,15 +15,15 @@ Installation:
 
    Now go ahead, open Postman and hit these endpoints:
    
-i) Getting list of all the users:
+# i) Getting list of all the users:
    
 		GET localhost:8989/users
 
-ii) Getting list of all the posts with comments:
+# ii) Getting list of all the posts with comments:
    
 		GET localhost:8989/posts
 
-iii) Updating/changing the avatar image for given user:
+# iii) Updating/changing the avatar image for given user:
 
 For this request, Make sure you're sending a file as form-data with key/name as "avatar" in the body/payload.
    
@@ -34,5 +34,7 @@ Here userId is the user's id so you'll need to use the same e.g. for user with u
 		POST localhost:8989/upload/1
 
 
-That's all!
 
+* If you wish to change the database port or connection string, open up Blog/configurations.json file and edit there.
+
+That's all!
