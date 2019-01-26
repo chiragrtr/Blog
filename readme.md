@@ -2,9 +2,11 @@
 
 1) Make sure you have node 8.9.4 or above installed on your system.
 2) Make sure you have mongodb running on your localhost (preferably on port "27017") *
-3) Navigate to "Blog" Directory and Run the following commands:
+3) Run the following commands:
 
 		git clone https://github.com/chiragrtr/Blog.git
+		
+		cd Blog
 
 		npm install
 
