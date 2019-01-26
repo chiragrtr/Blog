@@ -1,4 +1,4 @@
-Installation:
+# Installation:
 
 1) Make sure you have node 8.9.4 or above installed on your system.
 2) Make sure you have mongodb running on your localhost (preferably on port "27017") *
@@ -13,7 +13,9 @@ Installation:
 
 4) You should see : "Server is listening on port 8989"
 
-   Now go ahead, open Postman and hit these endpoints:
+# Usage:
+
+   Open Postman and hit these endpoints:
    
 # i) Getting list of all the users:
    
