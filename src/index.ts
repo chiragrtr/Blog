@@ -5,7 +5,7 @@ const apiCaller = require('./util/apiCaller');
 const db = require('./db/db');
 const asyncForEach = require('./util/util');
 
-const DB_PREFIX: string = "tesUser";
+const DB_PREFIX: string = "User-";
 const DB_NAMES: string[] = [];
 
 console.log("Starting up...");
