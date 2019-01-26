@@ -1,0 +1,4 @@
+{
+  "connectionString": "mongodb://localhost:",
+  "dbPort": "27017"
+}
