@@ -32,14 +32,18 @@ async function getPosts(dbPrefix: string, dbNames: string){
 }
 
 async function changeAvatar(dbPrefix: string, dbNames: string, file: any, userId: string){
+    const dbName: string = dbPrefix + userId;
+    if(!dbNames.includes(dbName)){
+        throw new Error("User not found");
+    }
     const path: string = file && file.path;
-    if(path){
-        const avatar: object = {
-            image: fs.readFileSync(path),
-            contentType: "image/png"
-        };
-        return await db.update(dbPrefix + userId, "users", {avatar});
-    } else {
+    if(!path){
         throw new Error("File must be sent");
     }
+    const avatar: object = {
+        image: fs.readFileSync(path),
+        contentType: "image/png"
+    };
+    return await db.update(dbName, "users", {avatar});
+
 }
